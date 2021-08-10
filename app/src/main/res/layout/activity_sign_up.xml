@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/please_enter_the_details_below"
+            android:textSize="24sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texttitle"
+            android:autofillHints="@string/name"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:autofillHints="Password"
+            android:hint="@string/password"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:autofillHints="@string/email"
+            android:hint="@string/email"
+            android:layout_marginTop="20dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/rno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:autofillHints="Roll number"
+            android:hint="@string/roll_number"
+            android:layout_marginTop="20dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/batch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rno"
+            android:autofillHints="Batch"
+            android:hint="@string/batch"
+            android:layout_marginTop="20dp"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/batch"
+            android:layout_marginTop="30dp"
+            android:text="@string/register" />
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnInsert"
+            android:layout_marginTop="75dp"
+            android:text="@string/existing_user_sign_in_here" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:context=".UpdateActivity">
+
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="50dp"
+            android:text="Enter new details"
+            android:textAlignment="center"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texttitle"
+            android:autofillHints="@string/name"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:autofillHints="Password"
+            android:hint="@string/password"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:autofillHints="@string/email"
+            android:hint="@string/email"
+            android:layout_marginTop="20dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/rno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:autofillHints="Roll number"
+            android:hint="@string/roll_number"
+            android:layout_marginTop="20dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/batch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rno"
+            android:autofillHints="Batch"
+            android:hint="@string/batch"
+            android:layout_marginTop="20dp"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/batch"
+            android:text="Update details"
+            android:layout_marginTop="45dp" />
+
+        <Button
+            android:id="@+id/signout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/update"
+            android:text="Log out"
+            android:layout_marginTop="75dp"/>
+    </RelativeLayout>
+</ScrollView>
